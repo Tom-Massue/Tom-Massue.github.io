@@ -1,13 +1,13 @@
-# Site personnel — Tom Massué
+# Personal website — Tom Massué
 
-Site académique en une page (HTML/CSS/JS, aucune dépendance).
+One-page academic website (HTML/CSS/JS, no dependencies).
 
-## Fichiers
+## Files
 
-- `index.html` — structure et contenu du site
-- `style.css` — mise en forme (couleurs, polices, animations)
-- `script.js` — interactions (accordéon, thème clair/sombre, carrousel, lightbox)
-- `assets/img/` — photos, logos et posters (PDF)
-- `LICENSE` — licence MIT
+- `index.html` — site structure and content
+- `style.css` — styling (colors, fonts, animations)
+- `script.js` — interactions (accordion, light/dark theme, carousel, lightbox)
+- `assets/img/` — photos, logos and posters (PDF)
+- `LICENSE` — MIT license
 
-Site en ligne : [tom-massue.github.io](https://tom-massue.github.io)
+Live site: [tom-massue.github.io](https://tom-massue.github.io/)
