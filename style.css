@@ -269,9 +269,9 @@ html.light .hero-banner-overlay {
 
 .hero-banner-text { max-width: 62ch; }
 
-.hero-banner-text .mono-pre {
+.mono-pre {
     color: var(--accent-primary);
-    margin-top: 10px;
+    margin-top: 4px;
     margin-bottom: 0;
     font-size: 0.8rem;
     letter-spacing: 0.06em;
@@ -280,8 +280,8 @@ html.light .hero-banner-overlay {
 }
 
 .hero-banner-text h1 {
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
-    margin: 0 0 8px 0;
+    font-size: clamp(2.8rem, 6.5vw, 4.2rem);
+    margin: 0;
     line-height: 1.05;
     letter-spacing: -0.03em;
     color: var(--text-heading);
@@ -293,7 +293,8 @@ html.light .hero-banner-overlay {
     transition: opacity 0.35s ease;
 }
 
-.hero-tagline { font-size: 1.05rem; color: var(--text-muted); margin: 0; }
+.hero-intro .hero-tagline { font-size: 1.2rem; color: var(--text-main); margin: 0; font-weight: 500; }
+.hero-intro .mono-pre { margin-bottom: 22px; }
 
 .hero-avatar { flex-shrink: 0; transform: translateY(75px); }
 
@@ -832,8 +833,8 @@ footer { padding: 50px 0 36px; text-align: center; color: var(--text-dim); font-
 }
 
 .project-gallery img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    transform: scale(1.9);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.45);
     position: relative;
     z-index: 2;
 }

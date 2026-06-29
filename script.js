@@ -5,7 +5,7 @@ function toggleProject(btn) {
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
-// Carrousel de photos "About me" — avance d'une photo à chaque clic
+// Carrousel de photos "About me" — avance d'une photo au clic, et tout seul automatiquement
 function advanceAboutPhoto() {
     const wrap = document.getElementById('aboutPhoto');
     const slides = wrap.querySelectorAll('.about-photo-slide');
@@ -17,6 +17,14 @@ function advanceAboutPhoto() {
     dots[current].classList.remove('active');
     slides[next].classList.add('active');
     dots[next].classList.add('active');
+}
+
+let aboutPhotoTimer = setInterval(advanceAboutPhoto, 2500); // vitesse du défilement auto : 2.5s par photo
+
+function advanceAboutPhotoManual() {
+    advanceAboutPhoto();
+    clearInterval(aboutPhotoTimer);
+    aboutPhotoTimer = setInterval(advanceAboutPhoto, 2500);
 }
 
 // Theme toggle (clair par défaut, sauf préférence sauvegardée)
