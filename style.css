@@ -324,25 +324,21 @@ html.light .hero-banner-overlay {
 .logo-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 22px; }
 
 .logo-placeholder {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     cursor: pointer;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-align: center;
-    line-height: 1.4;
-    color: var(--text-dim);
-    border: 1px dashed var(--border-highlight);
+    border: 1px solid var(--border-highlight);
     border-radius: var(--radius-sm);
-    background: var(--surface-hover);
-    padding: 10px 18px;
+    background: var(--surface);
+    padding: 6px;
     transition: all 0.25s ease;
 }
 
 .logo-placeholder:hover {
     border-color: var(--accent-primary);
-    color: var(--accent-primary);
-    background: var(--accent-glow);
+    background: var(--surface-hover);
 }
 
 .logo-row img { height: 44px; width: auto; object-fit: contain; }
@@ -831,6 +827,15 @@ footer { padding: 50px 0 36px; text-align: center; color: var(--text-dim); font-
     height: auto;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-subtle);
+    cursor: pointer;
+    transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
 }
 
 .gallery-placeholder {
