@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="fr" class="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tom Massué — eDNA &amp; Aquatic Entomology</title>
+    <title>Tom Massué</title>
     <meta name="description"
         content="Tom Massué — Doctorant en écologie moléculaire. ADN environnemental, insectes aquatiques (EPT) et bioindication en Guyane française." />
     <meta name="author" content="Tom Massué" />
@@ -16,15 +16,21 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Tom Massué",
-      "jobTitle": "PhD Candidate in Molecular Ecology",
+      "jobTitle": "PhD Candidate in Ecology",
       "affiliation": {
         "@type": "Organization",
-        "name": "Université de Toulouse"
+        "name": "Université de Toulouse — CRBE"
       },
       "description": "Doctorant — ADN environnemental (eDNA) et bioindication des insectes aquatiques (EPT) en Guyane française.",
       "image": "assets/img/profile.jpg",
       "sameAs": [
-        "https://github.com/REPLACE_ME"
+        "https://orcid.org/0000-0001-7289-8268",
+        "https://scholar.google.com/citations?user=H__Sb6oAAAAJ&hl=en&oi=ao",
+        "https://www.researchgate.net/profile/Tom-Massue-2",
+        "https://www.linkedin.com/in/tom-massué-30b757171/",
+        "https://github.com/Tom-Massue",
+        "https://www.youtube.com/@Tom_Massué",
+        "https://www.protocols.io/researchers/tommassue"
       ]
     }
     </script>
@@ -33,10 +39,10 @@
     <!-- Google Fonts for Lora (headings) & JetBrains Mono (data) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <noscript><style>.section, .hero-intro { opacity: 1 !important; transform: none !important; }</style></noscript>
+    <noscript><style>.section, .hero-intro, .brand { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 
 <body>
@@ -45,9 +51,9 @@
 
     <nav class="nav-fixed">
         <div class="container nav-inner">
-            <a href="#" class="brand">Tom Massué<span class="brand-dot">.</span></a>
+            <a href="#" class="brand">Tom Massué</a>
             <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
+                <a href="#about" class="nav-link">About me</a>
                 <a href="#projects" class="nav-link">Research Projects</a>
                 <a href="#publications" class="nav-link">Publications</a>
                 <a href="#communications" class="nav-link">Communications</a>
@@ -56,14 +62,30 @@
             </div>
             <div class="nav-actions">
                 <button class="btn-icon" id="themeToggle" aria-label="Toggle Theme">
-                    <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+                    <svg class="icon-moon" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                 </button>
-                <!-- TODO: remplace "#" par tes vrais liens (GitHub, LinkedIn, ORCID...) -->
-                <a href="https://github.com/REPLACE_ME" target="_blank" rel="me noopener" class="btn-icon" aria-label="GitHub">
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="https://orcid.org/0000-0001-7289-8268" target="_blank" rel="me noopener" class="btn-icon" aria-label="ORCID" title="ORCID">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><circle cx="9.2" cy="8.6" r="0.7" fill="currentColor" stroke="none"></circle><path d="M9.2 11v5.2"></path><path d="M12.6 11h1.6a2.6 2.6 0 0 1 0 5.2h-1.6V11z"></path></svg>
+                </a>
+                <a href="https://scholar.google.com/citations?user=H__Sb6oAAAAJ&hl=en&oi=ao" target="_blank" rel="me noopener" class="btn-icon" aria-label="Google Scholar" title="Google Scholar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4 2 10l10 6 10-6-10-6z"></path><path d="M6 12.5V18l6 3.5 6-3.5v-5.5"></path></svg>
+                </a>
+                <a href="https://www.researchgate.net/profile/Tom-Massue-2?ev=hdr_xprf" target="_blank" rel="me noopener" class="btn-icon" aria-label="ResearchGate" title="ResearchGate">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="12" cy="18" r="2"></circle><path d="M7.4 7.6 10.8 16M16.6 7.6 13.2 16"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/tom-massué-30b757171/" target="_blank" rel="me noopener" class="btn-icon" aria-label="LinkedIn" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M7.5 10.5v6"></path><circle cx="7.5" cy="7.3" r="0.9" fill="currentColor" stroke="none"></circle><path d="M11.5 16.5v-3.5a2 2 0 0 1 4 0v3.5M11.5 13v3.5"></path></svg>
+                </a>
+                <a href="https://github.com/Tom-Massue" target="_blank" rel="me noopener" class="btn-icon" aria-label="GitHub" title="GitHub">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
-                <a href="mailto:REPLACE_ME@example.fr" class="btn-icon" aria-label="Email">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="https://www.youtube.com/@Tom_Massué" target="_blank" rel="me noopener" class="btn-icon" aria-label="YouTube" title="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="4"></rect><path d="M10.5 9.3v5.4l4.5-2.7-4.5-2.7z" fill="currentColor" stroke="none"></path></svg>
+                </a>
+                <a href="https://www.protocols.io/researchers/tommassue" target="_blank" rel="me noopener" class="btn-icon" aria-label="protocols.io" title="protocols.io">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2v6.2L4.4 19.5A1.8 1.8 0 0 0 6 22h12a1.8 1.8 0 0 0 1.6-2.5L15 8.2V2"></path><path d="M9 2h6"></path><path d="M7.2 14h9.6"></path></svg>
                 </a>
             </div>
         </div>
@@ -75,10 +97,9 @@
         <!-- TODO: remplace assets/img/banner.jpg par ta vraie photo (rivière, terrain, Guyane...) -->
         <div class="container hero-banner-content">
             <div class="hero-banner-text">
-                <p class="mono-pre">PhD Candidate · Université de Toulouse</p>
                 <h1>Tom Massué</h1>
                 <p class="hero-tagline">Environmental DNA &amp; <span class="highlight" id="rotator">Aquatic Entomology</span></p>
-                <p class="hero-meta">Toulouse / Guyane 🇬🇫 · EPT Insects · PhD in Progress</p>
+                <p class="mono-pre">PhD Candidate · University of Toulouse · CRBE laboratory</p>
             </div>
             <div class="hero-avatar">
                 <!-- TODO: remplace ce bloc par <img src="assets/img/profile.jpg" alt="Tom Massué"> quand tu as ta photo -->
@@ -92,13 +113,14 @@
     <main class="container">
         <!-- Hero intro -->
         <section class="hero-intro">
-            <p>I study how environmental DNA (eDNA) can track communities of aquatic insects — mayflies, stoneflies and caddisflies (EPT) — to monitor the health of tropical streams in French Guiana. My work spans molecular ecology, metabarcoding and the bioinformatic pipelines that turn river water into a record of biodiversity.</p>
-            <div class="chip-container">
-                <span class="chip">Methods: R / HPC</span>
-                <span class="chip">Metabarcoding</span>
-                <span class="chip">EPT Bioindication</span>
+            <p>This page gathers information about my research and academic activities. Don't hesitate to reach out!</p>
+            <div class="logo-row">
+                <!-- TODO: remplace par <img src="assets/img/logo-toulouse.png" alt="Université de Toulouse"> -->
+                <a href="https://www.univ-tlse3.fr/home" target="_blank" rel="noopener" class="logo-placeholder">Logo<br>Université de Toulouse</a>
+                <!-- TODO: remplace par <img src="assets/img/logo-crbe.png" alt="CRBE"> -->
+                <a href="https://crbe.cnrs.fr/en/" target="_blank" rel="noopener" class="logo-placeholder">Logo<br>CRBE</a>
             </div>
-            <a href="mailto:REPLACE_ME@example.fr" class="btn-primary">
+            <a href="mailto:tom.massue.17@gmail.com" class="btn-primary">
                 <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 Contact Me
             </a>
@@ -109,20 +131,38 @@
         <!-- About -->
         <section id="about" class="section">
             <div class="section-head">
-                <span class="section-number">01.</span>
-                <h2 class="section-title">About Me</h2>
+                <span class="section-number">I.</span>
+                <h2 class="section-title">About me</h2>
             </div>
             <div class="about-grid">
                 <div class="text-block">
-                    <p>I'm a PhD candidate working on <strong>environmental DNA (eDNA)</strong> as a tool to monitor freshwater biodiversity. My research focuses on <strong>EPT taxa</strong> — Ephemeroptera, Plecoptera and Trichoptera — classic bioindicators of stream water quality, sampled across rivers in <strong>French Guiana</strong>.</p>
-                    <p>Concretely, my work covers the full chain: 16S metabarcoding of short Illumina amplicons (~215 bp), and the bioinformatic processing of that data through pipelines such as <strong>FROGS</strong> (SWARM and DADA2 clustering) run on the <strong>Genotoul HPC cluster</strong>, followed by taxonomic affiliation (RDP, BLCA, LCA) and statistical analysis with <strong>metabaR</strong>.</p>
-                    <p>I care about reproducible, well-justified methodology — most of my pipeline choices are backed by published validation work (e.g. Wang et al. 2007 for the RDP classifier, Bacci et al. 2015 for threshold validation on short amplicons).</p>
+                    <p>I investigate the use of environmental DNA (eDNA) to study aquatic insect communities in French Guiana. My research lies at the interface of community ecology, molecular ecology and bioinformatics, and I am also interested in macroecological questions across a broader range of taxa, including vertebrates.</p>
+                    <p>My work is driven by two main motivations. The first is methodological: improving eDNA and metabarcoding based approaches and reducing their technical biases, to make them as robust and rigorous as possible. The second is more applied: using eDNA to monitor communities for conservation purposes, with a particular interest in assessing the impact of human activities and climate change on biodiversity.</p>
+                    <p>More broadly, I value reproducible, rigorous, open and collaborative science.</p>
+                    <p>In the past, I have also held various positions as a research assistant, data analyst, project manager, and fisheries observer, as you can see here <span class="arrow-cue">→</span></p>
                 </div>
-                <div class="about-photo">
-                    <!-- TODO: remplace par <img src="assets/img/profile2.jpg" alt="Tom Massué sur le terrain"> -->
-                    <div class="placeholder-img" style="height:100%; aspect-ratio:auto; border-radius:0;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 16q5-4 10 0t10 0"></path><path d="M2 20q5-4 10 0t10 0"></path><path d="M12 2c3 3 3 7 0 10-3-3-3-7 0-10z"></path></svg>
-                        <span>Photo de terrain<br>(assets/img/profile2.jpg)</span>
+                <div class="about-photo" id="aboutPhoto" onclick="advanceAboutPhoto()">
+                    <!-- TODO: remplace chaque slide par <img src="assets/img/about1.jpg"> etc. Ajoute/retire des div class="about-photo-slide" selon le nombre de photos voulu -->
+                    <div class="about-photo-slide active">
+                        <div class="placeholder-img" style="height:100%; aspect-ratio:auto; border-radius:0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 16q5-4 10 0t10 0"></path><path d="M2 20q5-4 10 0t10 0"></path><path d="M12 2c3 3 3 7 0 10-3-3-3-7 0-10z"></path></svg>
+                            <span>Photo 1 (clique pour la suivante)<br>(assets/img/about1.jpg)</span>
+                        </div>
+                    </div>
+                    <div class="about-photo-slide">
+                        <div class="placeholder-img" style="height:100%; aspect-ratio:auto; border-radius:0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
+                            <span>Photo 2<br>(assets/img/about2.jpg)</span>
+                        </div>
+                    </div>
+                    <div class="about-photo-slide">
+                        <div class="placeholder-img" style="height:100%; aspect-ratio:auto; border-radius:0;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9l3 3-3 3"></path></svg>
+                            <span>Photo 3<br>(assets/img/about3.jpg)</span>
+                        </div>
+                    </div>
+                    <div class="about-photo-dots">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
                     </div>
                 </div>
             </div>
@@ -133,68 +173,26 @@
         <!-- Projects — accordéon Master / Thèse -->
         <section id="projects" class="section">
             <div class="section-head">
-                <span class="section-number">02.</span>
+                <span class="section-number">II.</span>
                 <h2 class="section-title">Research Projects</h2>
             </div>
 
             <!-- Carte THÈSE -->
-            <div class="project-card open" id="project-phd">
-                <button class="project-toggle" onclick="toggleProject(this)" aria-expanded="true">
+            <div class="project-card" id="project-phd">
+                <button class="project-toggle" onclick="toggleProject(this)" aria-expanded="false">
+                    <!-- TODO: remplace assets/img/project-phd-cover.jpg par une vraie photo (rivière, terrain...) -->
+                    <div class="project-photo" style="background-image:url('assets/img/project-phd-cover.jpg');"></div>
                     <div class="project-head-text">
-                        <span class="project-tag">Thèse · [Année] — Present</span>
-                        <h3>ADN environnemental des insectes aquatiques (EPT) en Guyane française</h3>
-                        <p class="project-teaser">Suivi de la qualité des eaux par metabarcoding 16S, du prélèvement de rivière jusqu'à l'affiliation taxonomique sur HPC.</p>
+                        <span class="project-tag">2025 – 2028 · Toulouse, France</span>
+                        <h3>Aquatic insects monitoring</h3>
                     </div>
                     <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
                 <div class="project-collapse">
                     <div class="project-panel-inner">
                         <div class="project-body">
-                            <p>Mon travail de thèse étudie comment l'<strong>ADN environnemental (eDNA)</strong> présent dans l'eau des rivières permet de détecter et suivre les communautés d'insectes aquatiques EPT (<strong>Ephemeroptera, Plecoptera, Trichoptera</strong>), des bioindicateurs classiques de la qualité de l'eau, en <strong>Guyane française</strong>.</p>
-                            <p>Concrètement : metabarcoding 16S sur amplicons courts (~215 pb, Illumina paired-end), puis traitement bioinformatique complet — clustering, affiliation taxonomique, statistiques — exécuté sur le cluster HPC <strong>Genotoul</strong>.</p>
-
-                            <div class="project-subgrid">
-                                <article class="item">
-                                    <span class="item-tag">Clustering</span>
-                                    <h3>FROGS + SWARM</h3>
-                                    <p>486 ASVs filtrés (RDP ≥ 0.5, family/genus/species).</p>
-                                </article>
-                                <article class="item">
-                                    <span class="item-tag">Clustering</span>
-                                    <h3>FROGS + DADA2</h3>
-                                    <p>771 ASVs filtrés (mêmes critères RDP).</p>
-                                </article>
-                                <article class="item">
-                                    <span class="item-tag">Affiliation taxonomique</span>
-                                    <h3>RDP · BLCA · LCA</h3>
-                                    <p>Comparaison de trois méthodes sur amplicons courts.</p>
-                                </article>
-                                <article class="item">
-                                    <span class="item-tag">Statistiques</span>
-                                    <h3>metabaR (R)</h3>
-                                    <p>Détection des tag-jumps et contaminants via contrôles négatifs.</p>
-                                </article>
-                            </div>
-
-                            <p style="margin-top:18px;"><strong>Photos :</strong> remplace les blocs ci-dessous par tes vraies photos de terrain / labo.</p>
-                            <div class="project-gallery">
-                                <div class="gallery-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14q5-4 10 0t10 0"></path><path d="M2 18q5-4 10 0t10 0"></path></svg>
-                                    <span>rivière Guyane</span>
-                                </div>
-                                <div class="gallery-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="2" ry="6"></ellipse><path d="M12 7 L4 3 M12 7 L20 3"></path></svg>
-                                    <span>échantillonnage EPT</span>
-                                </div>
-                                <div class="gallery-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9l3 3-3 3"></path></svg>
-                                    <span>labo / Genotoul</span>
-                                </div>
-                                <div class="gallery-placeholder">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle></svg>
-                                    <span>+ ajoute-en</span>
-                                </div>
-                            </div>
+                            <p>This project aims at assessing water quality in French Guiana by studying aquatic insect communities using environmental DNA. Aquatic insects, and in particular Ephemeroptera, Plecoptera and Trichoptera, are widely used to evaluate the health of freshwater ecosystems, but identifying them through traditional taxonomic methods is time consuming and requires expertise that remains incomplete for many tropical taxa. Environmental DNA metabarcoding offers a scalable alternative, but it requires a reliable reference database and a validated bioinformatic pipeline to produce accurate community data.</p>
+                            <p>My work consists in building and curating a reference database for aquatic insects species in French Guiana, including species delimitation, developing and comparing bioinformatic pipelines for sequence clustering and taxonomic assignment, and conducting statistical analyses to describe aquatic insect communities. The resulting data are being used to study differences in community composition between sites and habitats, and to assess the impact of anthropogenic disturbance on water quality.</p>
                         </div>
                     </div>
                 </div>
@@ -203,29 +201,31 @@
             <!-- Carte MASTER — à compléter -->
             <div class="project-card" id="project-master">
                 <button class="project-toggle" onclick="toggleProject(this)" aria-expanded="false">
+                    <!-- TODO: remplace assets/img/project-master-cover.jpg par une vraie photo -->
+                    <div class="project-photo" style="background-image:url('assets/img/project-master-cover.jpg');"></div>
                     <div class="project-head-text">
-                        <span class="project-tag">Master · [À compléter]</span>
-                        <h3>[Titre de ton projet de Master]</h3>
-                        <p class="project-teaser">Donne-moi le sujet, le contexte et les méthodes, et je remplis cette carte de la même façon.</p>
+                        <span class="project-tag">2020 – 2022 · Dunedin, New Zealand</span>
+                        <h3>Heated Panels</h3>
                     </div>
                     <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
                 <div class="project-collapse">
                     <div class="project-panel-inner">
                         <div class="project-body">
-                            <p>[Description de ton projet de Master — quelques phrases sur le contexte, la question scientifique, les méthodes utilisées.]</p>
+                            <p>The Heated Panels project aimed at better understanding how rising ocean temperatures affect benthic marine communities, in particular serpulid tubeworms, ascidians, bryozoans, and biofilms, which act as ecosystem engineers for many other species. Warming experiments are often conducted in tank conditions, which removes natural variation in light, food availability and temperature and limits how realistic the resulting ecological responses can be. To address this, the project used heated settlement panels deployed in situ, warming a thin layer of seawater directly above the panel surface by a controlled amount (+1°C or +2°C, corresponding to mid and end of century warming projections) while leaving the surrounding environment unmodified.</p>
+                            <p>I conducted this research during my Master's degree at the University of Otago, New Zealand, in collaboration with Jessica Moffitt (PhD candidate) and the British Antarctic Survey.</p>
                             <div class="project-gallery">
                                 <div class="gallery-placeholder">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle></svg>
-                                    <span>photo 1</span>
+                                    <span>assets/img/project-master-1.jpg</span>
                                 </div>
                                 <div class="gallery-placeholder">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle></svg>
-                                    <span>photo 2</span>
+                                    <span>assets/img/project-master-2.jpg</span>
                                 </div>
                                 <div class="gallery-placeholder">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle></svg>
-                                    <span>photo 3</span>
+                                    <span>assets/img/project-master-3.jpg</span>
                                 </div>
                             </div>
                         </div>
@@ -239,13 +239,26 @@
         <!-- Publications -->
         <section id="publications" class="section">
             <div class="section-head">
-                <span class="section-number">03.</span>
+                <span class="section-number">III.</span>
                 <h2 class="section-title">Publications</h2>
             </div>
-            <!-- TODO: remplace ce bloc par tes vraies publications quand tu en as -->
-            <div class="empty-state">
-                Pas encore de publication — ta première contribution apparaîtra ici.<br>
-                <span class="mono" style="opacity:0.8;">Dis-moi le titre et le statut (in prep / submitted / published) et je l'ajoute.</span>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div>
+                        <span class="pub-title">Projected warming disrupts temperate serpulid communities, key engineers of benthic ecosystems: Evidence from in situ thermal experiments</span>
+                        <span class="pub-authors"><strong>Massué, T.</strong>, Moffitt, J. B., Jowett, T., Thomas, L. J., Peck, L. S., &amp; Lamare, M. D.</span>
+                        <span class="pub-journal">Marine Ecology Progress Series, 786, meps15151 — <a href="https://doi.org/10.3354/meps15151" target="_blank" rel="noopener" class="pub-link">doi.org/10.3354/meps15151</a></span>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div>
+                        <span class="pub-title">Exploring the potential of serpulid external tube morphology for rapid grouping assessment in ecological research: A case study from southern New Zealand</span>
+                        <span class="pub-authors"><strong>Massué, T.</strong>, Ferreira, S., Moffitt, J., Gemmell, N. J., &amp; Lamare, M. D.</span>
+                        <span class="pub-journal">New Zealand Journal of Zoology, 53, e70021 — <a href="https://doi.org/10.1002/njz2.70021" target="_blank" rel="noopener" class="pub-link">doi.org/10.1002/njz2.70021</a></span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -254,13 +267,43 @@
         <!-- Communications -->
         <section id="communications" class="section">
             <div class="section-head">
-                <span class="section-number">04.</span>
+                <span class="section-number">IV.</span>
                 <h2 class="section-title">Communications</h2>
             </div>
-            <!-- TODO: remplace par tes vraies communications (posters, conférences, séminaires) -->
-            <div class="empty-state">
-                Pas encore de communication listée — posters, conférences, séminaires de labo apparaîtront ici.<br>
-                <span class="mono" style="opacity:0.8;">Dis-moi le titre, l'événement, le lieu et la date, et je l'ajoute.</span>
+            <div class="comm-list">
+                <div class="comm-item">
+                    <div class="comm-main">
+                        <span class="comm-title">New Zealand Marine Science Society Conference</span>
+                        <span class="comm-meta">Poster presentation · July 2021 · Tauranga, New Zealand</span>
+                    </div>
+                    <!-- TODO: remplace assets/img/poster-marine-2021.pdf par ton vrai poster -->
+                    <button class="comm-action" onclick="openLightbox('assets/img/poster-marine-2021.pdf')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"></path><path d="M14 3v4h4"></path></svg>
+                        View poster
+                    </button>
+                </div>
+                <div class="comm-item">
+                    <div class="comm-main">
+                        <span class="comm-title">7th International APECS Online Conference</span>
+                        <span class="comm-meta">Oral presentation (online) · May 2021 · Association of Polar Early Career Scientists (APECS)</span>
+                    </div>
+                    <!-- TODO: remplace par le lien direct vers la vidéo de cette présentation, dès que tu l'as -->
+                    <a class="comm-action" href="https://www.youtube.com/watch?v=B-kGNfOGxLI" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="4"></rect><path d="M10.5 9.3v5.4l4.5-2.7-4.5-2.7z" fill="currentColor" stroke="none"></path></svg>
+                        View video
+                    </a>
+                </div>
+                <div class="comm-item">
+                    <div class="comm-main">
+                        <span class="comm-title">New Zealand Antarctic Science Conference</span>
+                        <span class="comm-meta">Poster presentation · February 2021 · Christchurch, New Zealand</span>
+                    </div>
+                    <!-- TODO: remplace assets/img/poster-antarctic-2021.pdf par ton vrai poster -->
+                    <button class="comm-action" onclick="openLightbox('assets/img/poster-antarctic-2021.pdf')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"></path><path d="M14 3v4h4"></path></svg>
+                        View poster
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -269,13 +312,22 @@
         <!-- Awards -->
         <section id="awards" class="section">
             <div class="section-head">
-                <span class="section-number">05.</span>
+                <span class="section-number">V.</span>
                 <h2 class="section-title">Awards</h2>
             </div>
-            <!-- TODO: remplace par tes vraies distinctions (bourses, prix, financements) -->
-            <div class="empty-state">
-                Pas encore de distinction listée.<br>
-                <span class="mono" style="opacity:0.8;">Dis-moi le nom, l'organisme et l'année, et je l'ajoute.</span>
+            <div class="comm-list">
+                <div class="comm-item">
+                    <div class="comm-main">
+                        <span class="comm-title">Master's Postgraduate Publishing Bursary</span>
+                        <span class="comm-meta">University of Otago, New Zealand · July 2022</span>
+                    </div>
+                </div>
+                <div class="comm-item">
+                    <div class="comm-main">
+                        <span class="comm-title">People's Choice Award of the Best Poster</span>
+                        <span class="comm-meta">New Zealand Antarctic Science Conference · February 2021</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -284,46 +336,177 @@
         <!-- CV -->
         <section id="cv" class="section">
             <div class="section-head">
-                <span class="section-number">06.</span>
-                <h2 class="section-title">CV &amp; Experience</h2>
+                <span class="section-number">VI.</span>
+                <h2 class="section-title">CV</h2>
             </div>
-            <div class="cv-container">
-                <div class="cv-sticky">
-                    <div class="tech-img-wrap">
-                        <!-- TODO: remplace par <img src="assets/img/profile3.jpg" class="tech-img"> -->
-                        <div class="placeholder-img" style="aspect-ratio:3/4;">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-1a8 8 0 0 1 16 0v1"></path></svg>
-                            <span>assets/img/profile3.jpg</span>
+            <div class="cv-horizontal-wrap">
+                <div class="cv-horizontal-track">
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">2015 – 2018</span>
+                            <h3 class="cv-role">Undergraduate in Biology of Organisms and Ecosystems</h3>
+                            <div class="cv-org">Côte d'Azur University</div>
+                            <span class="cv-loc">Nice, France</span>
                         </div>
                     </div>
-                </div>
-                <div class="cv-scroll">
-                    <div class="cv-timeline">
-                        <div class="cv-card">
-                            <span class="cv-date">[Année] — Present</span>
-                            <h3 class="cv-role">PhD Candidate in Molecular Ecology</h3>
-                            <div class="cv-org">[Université / Laboratoire — à compléter]</div>
-                            <span class="cv-loc">Toulouse, France</span>
-                            <p class="cv-desc"><strong>Subject:</strong> Suivi par ADN environnemental (eDNA) des insectes aquatiques EPT en Guyane française.</p>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">Jul – Aug 2017</span>
+                            <h3 class="cv-role">Research Assistant in Behavioural Ecology</h3>
+                            <div class="cv-org">INRAE PACA</div>
+                            <span class="cv-loc">Sophia-Antipolis, France</span>
+                            <p class="cv-desc">Behavioural ecology and genetics of the <em>Mastrus ridens</em> parasitoid; phenotypic capacity of diploid males to survive. Supervised by Xavier Fauvergue and Alexandra Auguste.</p>
                             <div class="cv-skills">
-                                <span class="cv-skill">Metabarcoding</span><span class="cv-skill">Bioinformatics</span><span class="cv-skill">R</span><span class="cv-skill">HPC</span>
+                                <span class="cv-skill">Behavioural Ecology</span><span class="cv-skill">Genetics</span><span class="cv-skill">Laboratory work</span>
                             </div>
                         </div>
-                        <div class="cv-card" style="opacity:0.6;">
-                            <span class="cv-date">[À compléter]</span>
-                            <h3 class="cv-role">[Ton expérience précédente — Master, stage, etc.]</h3>
-                            <div class="cv-org">[Établissement]</div><span class="cv-loc">[Lieu]</span>
-                            <p class="cv-desc">Donne-moi tes expériences passées et je les ajoute ici, dans le même format.</p>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">Aug – Sep 2017</span>
+                            <h3 class="cv-role">Fieldwork Assistant in a National Park</h3>
+                            <div class="cv-org">Parc Amazonien de Guyane</div>
+                            <span class="cv-loc">Saül, French Guiana</span>
+                            <p class="cv-desc">Field surveying and data management, identification of endemic species, and logistics for field missions. Supervised by Raphaëlle Rinaldo and Sébastien Sant.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Fieldwork</span><span class="cv-skill">Species ID</span><span class="cv-skill">Data Management</span>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">June 2018</span>
+                            <h3 class="cv-role">Research Assistant in Marine Ecology</h3>
+                            <div class="cv-org">Observatoire Océanologique de Villefranche-sur-Mer</div>
+                            <span class="cv-loc">Villefranche-sur-Mer, France</span>
+                            <p class="cv-desc">Creation of a second prototype to quantify <em>Ostreopsis ovata</em>, a benthic micro-alga, and to measure its concentration. Supervised by Luisa Mangialajo and Jean-Michel Grisoni.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Marine Biology</span><span class="cv-skill">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">July 2018</span>
+                            <h3 class="cv-role">Fieldwork Assistant in a Wildlife Park</h3>
+                            <div class="cv-org">Planète Sauvage</div>
+                            <span class="cv-loc">Nantes, France</span>
+                            <p class="cv-desc">Supported a wildlife park management; ethology studies on dolphins, lemurs and squirrel monkeys. Supervised by Alexandre Petry.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Ethology</span><span class="cv-skill">Animal Care</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">2020</span>
+                            <h3 class="cv-role">Postgraduate Diploma of Science</h3>
+                            <div class="cv-org">University of Otago</div>
+                            <span class="cv-loc">Dunedin, New Zealand</span>
+                            <div class="cv-skills">
+                                <span class="cv-skill">R</span><span class="cv-skill">Management</span><span class="cv-skill">Ecology</span><span class="cv-skill">Conservation</span><span class="cv-skill">Biostatistics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">2021 – 2022</span>
+                            <h3 class="cv-role">MSc, Marine Science</h3>
+                            <div class="cv-org">University of Otago</div>
+                            <span class="cv-loc">Dunedin, New Zealand</span>
+                            <p class="cv-desc">I studied the impact of rising temperatures on a benthic tube worms community using in situ heated panels, in collaboration with the British Antarctic Survey. Supervised by Prof. Miles Lamare.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Marine Ecology</span><span class="cv-skill">Field Experiments</span><span class="cv-skill">Project Management</span><span class="cv-skill">Barcoding</span><span class="cv-skill">Laboratory work</span><span class="cv-skill">R</span><span class="cv-skill">Geneious Prime</span><span class="cv-skill">Phylogenetic analyses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">Jan 2021 – Jul 2023</span>
+                            <h3 class="cv-role">Project Manager</h3>
+                            <div class="cv-org">Hala &amp; Sofar Sounds</div>
+                            <span class="cv-loc">Dunedin, New Zealand</span>
+                            <p class="cv-desc">Managed art events for a worldwide organisation (Sofar Sounds) and a national one (Hala); external engagement with partners; reporting, budgeting and volunteer management.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Project Management</span><span class="cv-skill">Budgeting</span><span class="cv-skill">Charity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">Jun 2023 – Apr 2024</span>
+                            <h3 class="cv-role">Data Analyst</h3>
+                            <div class="cv-org">Jarvis McDonald Group</div>
+                            <span class="cv-loc">Wellington, New Zealand</span>
+                            <p class="cv-desc">Statistical analysis and data manipulation; maintained R-based code and GitHub repositories for analysis and reporting; supported client research projects.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">R</span><span class="cv-skill">GitHub</span><span class="cv-skill">Graphical visualisation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">Oct 2023 – Mar 2025</span>
+                            <h3 class="cv-role">Fisheries Observer</h3>
+                            <div class="cv-org">Ministry for Primary Industries</div>
+                            <span class="cv-loc">New Zealand</span>
+                            <p class="cv-desc">Collected samples and biological data for national scientific institutions; species identification; monitored operational compliance; reporting and analysis.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Species ID</span><span class="cv-skill">Compliance</span><span class="cv-skill">Reporting</span><span class="cv-skill">Fieldwork</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-node">
+                        <div class="cv-dot"></div>
+                        <div class="cv-node-content">
+                            <span class="cv-date">2025 – 2028</span>
+                            <h3 class="cv-role">PhD Candidate in Ecology</h3>
+                            <div class="cv-org">CRBE · University of Toulouse</div>
+                            <span class="cv-loc">Toulouse, France</span>
+                            <p class="cv-desc">The topic of my PhD is: Evaluation of water quality using environmental DNA: towards a monitoring of amphibians and aquatic insects in French Guiana.</p>
+                            <div class="cv-skills">
+                                <span class="cv-skill">Metabarcoding</span><span class="cv-skill">Bioinformatics</span><span class="cv-skill">R</span><span class="cv-skill">eDNA</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
     </main>
 
+
+    <!-- Lightbox pour voir les posters en grand (image OU pdf) -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
+        <img id="lightbox-img" src="" alt="Poster" onclick="event.stopPropagation()">
+        <iframe id="lightbox-pdf" src="" title="Poster PDF" onclick="event.stopPropagation()"></iframe>
+    </div>
+
     <footer>
-        <div class="mono">© <span id="year"></span> Tom Massué — Toulouse, France</div>
+        <div class="mono">© <span id="year"></span> Tom Massué</div>
     </footer>
 
     <script src="script.js"></script>

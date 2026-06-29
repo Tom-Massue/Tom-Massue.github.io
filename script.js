@@ -5,10 +5,26 @@ function toggleProject(btn) {
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
-// Theme toggle
+// Carrousel de photos "About me" — avance d'une photo à chaque clic
+function advanceAboutPhoto() {
+    const wrap = document.getElementById('aboutPhoto');
+    const slides = wrap.querySelectorAll('.about-photo-slide');
+    const dots = wrap.querySelectorAll('.about-photo-dots .dot');
+    let current = 0;
+    slides.forEach((slide, i) => { if (slide.classList.contains('active')) current = i; });
+    const next = (current + 1) % slides.length;
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    slides[next].classList.add('active');
+    dots[next].classList.add('active');
+}
+
+// Theme toggle (clair par défaut, sauf préférence sauvegardée)
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
-if (localStorage.getItem('theme') === 'light') html.classList.add('light');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') html.classList.remove('light');
+else if (savedTheme === 'light') html.classList.add('light');
 toggle.addEventListener('click', () => {
     html.classList.toggle('light');
     localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark');
@@ -32,7 +48,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(s => observer.observe(s));
 
 // Rotateur de mots dans le hero
-const words = ["Aquatic Entomology", "Metabarcoding", "Freshwater Biomonitoring", "Tropical Streams", "Bioinformatics"];
+const words = ["Metabarcoding", "Bioinformatics", "Community Ecology", "Molecular Ecology", "Climate Change", "Biomonitoring"];
 let i = 0;
 const el = document.getElementById('rotator');
 setInterval(() => {
@@ -55,3 +71,37 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.12 });
 revealTargets.forEach(el => revealObserver.observe(el));
+
+// Lightbox pour voir les posters (Communications) en grand — image ou PDF
+function openLightbox(src) {
+    const img = document.getElementById('lightbox-img');
+    const pdf = document.getElementById('lightbox-pdf');
+    if (src.toLowerCase().endsWith('.pdf')) {
+        pdf.src = src;
+        pdf.classList.add('show');
+        img.classList.remove('show');
+        img.src = '';
+    } else {
+        img.src = src;
+        img.classList.add('show');
+        pdf.classList.remove('show');
+        pdf.src = '';
+    }
+    document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+}
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
+// Affiche le nom dans la nav seulement après avoir dépassé la photo de couverture
+const heroBanner = document.querySelector('.hero-banner');
+const brandEl = document.querySelector('.brand');
+const brandObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        brandEl.classList.toggle('visible', !entry.isIntersecting);
+    });
+}, { threshold: 0, rootMargin: '-64px 0px 0px 0px' });
+if (heroBanner) brandObserver.observe(heroBanner);
